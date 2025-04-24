@@ -2,6 +2,7 @@ import { useState } from "react";
 import UserCard from "./Card/UserCard";
 import ContentHeader from "./Header/ContentHeader";
 import InputSearch from "./Search/InputSearch";
+import LoadingSpinner from "./Loading/LoadingSpinner";
 
 export default function ContentContainer() {
     const [userData, setUserData] = useState(null);
@@ -10,28 +11,29 @@ export default function ContentContainer() {
 
     // callback passado ao InputSearch
     async function handleSearch(username) {
-        //Começa carregando
         setLoading(true);
         setErrorRequest(null);
         setUserData(null);
         try {
-            const response = await fetch(
-                `https://api.github.com/users/${username}`
-            );
+            const response = await fetch(`https://api.github.com/users/${username}`);
             if (!response.ok) {
-                throw new Error(`Status: ${response.status}`);
+                throw new Error(`${response.status}`);
             }
             const data = await response.json();
-            // Atualiza os dados com a resposta em formato json
             setUserData(data);
         } catch (err) {
-            // Se pegar um erro exibe a mensagem
-            errorRequest(err.message);
+            console.log(err);
+            if (err.message === "404") {
+                const message = "Nenhum perfil foi encontrado com esse nome de usuário. Tente novamente";
+                setErrorRequest(message);
+            } else {
+                const message = "Ocorreu um erro ao buscar o perfil. Tente novamente mais tarde.";
+                setErrorRequest(message);
+            }
         } finally {
-            // Desativa o loading
             setLoading(false);
         }
-    }
+    }    
     return (
         <div
             className="min-h-7/10
@@ -48,9 +50,9 @@ export default function ContentContainer() {
             <ContentHeader></ContentHeader>
             <InputSearch onSearch={handleSearch}></InputSearch>
             {/* Carrega de acordo com o estado */}
-            {loading && <p className="animate-spin">Carregando...</p>}
-            {errorRequest && <p className="text-red-500">Erro: {errorRequest}</p>}
+            {loading && <LoadingSpinner></LoadingSpinner>}
             {userData && <UserCard user={userData} />}
+            {errorRequest && <p className="w-3/4 flex bg-card-bg rounded-3xl py-8 px-16 text-red-500 text-xl justify-center align-middle">{errorRequest}</p>}
         </div>
     );
 }
