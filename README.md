@@ -38,15 +38,15 @@
 
 O projeto **GitHub Search Avanti** é uma aplicação feita para a Avanti Innovation Class, cujo objetivo era desenvolver uma aplicação em React que permita ao usuário buscar perfis no GitHub e exibir, de forma visualmente atraente e fiel ao layout definido no Figma, as principais informações de cada usuário (nome, foto de perfil e bio). A interface deve incluir:
 
-    Um campo de busca para digitar o nome de usuário do GitHub.
+   - Um campo de busca para digitar o nome de usuário do GitHub.
 
-    Consumo da API pública do GitHub para obter os dados do perfil.
+   - Consumo da API pública do GitHub para obter os dados do perfil.
 
-    Tratamento de erros, exibindo mensagem amigável caso o perfil não seja encontrado.
+   - Tratamento de erros, exibindo mensagem amigável caso o perfil não seja encontrado.
 
-    Estilização conforme o design do Figma, utilizando um framework CSS à escolha (por exemplo, Tailwind ou Bootstrap).
+   - Estilização conforme o design do Figma, utilizando um framework CSS à escolha (por exemplo, Tailwind ou Bootstrap).
 
-    (Opcional) Melhorias de experiência, como indicadores de carregamento e efeitos visuais.
+   - (Opcional) Melhorias de experiência, como indicadores de carregamento e efeitos visuais.
 
 ---
 
