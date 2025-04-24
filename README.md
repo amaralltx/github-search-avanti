@@ -3,55 +3,48 @@
 <!-- HEADER STYLE: CLASSIC -->
 <div align="center">
 
-<img src="readmeai/assets/logos/purple.svg" width="30%" style="position: relative; top: 0; right: 0;" alt="Project Logo"/>
+<img src="src/assets//svg/avanti-logo.svg" width="30%" style="position: relative; top: 0; right: 0;" alt="Logo do Projeto"/>
 
 # GITHUB-SEARCH-AVANTI
 
 <em></em>
 
 <!-- BADGES -->
-<img src="https://img.shields.io/github/license/amaralltx/github-search-avanti?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
-<img src="https://img.shields.io/github/last-commit/amaralltx/github-search-avanti?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
-<img src="https://img.shields.io/github/languages/top/amaralltx/github-search-avanti?style=default&color=0080ff" alt="repo-top-language">
-<img src="https://img.shields.io/github/languages/count/amaralltx/github-search-avanti?style=default&color=0080ff" alt="repo-language-count">
+<img src="https://img.shields.io/github/license/amaralltx/github-search-avanti?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="licença">
+<img src="https://img.shields.io/github/last-commit/amaralltx/github-search-avanti?style=default&logo=git&logoColor=white&color=0080ff" alt="último-commit">
+<img src="https://img.shields.io/github/languages/top/amaralltx/github-search-avanti?style=default&color=0080ff" alt="linguagem-principal">
+<img src="https://img.shields.io/github/languages/count/amaralltx/github-search-avanti?style=default&color=0080ff" alt="quantidade-linguagens">
 
 </div>
 <br>
 
 ---
 
-## Table of Contents
+## Índice
 
-- [Table of Contents](#table-of-contents)
-- [Overview](#overview)
-- [Features](#features)
-- [Project Structure](#project-structure)
-    - [Project Index](#project-index)
-- [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Testing](#testing)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+- [Índice](#índice)
+- [Visão Geral](#visão-geral)
+- [Funcionalidades](#funcionalidades)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+    - [Índice do Projeto](#índice-do-projeto)
+- [Primeiros Passos](#primeiros-passos)
+    - [Pré-requisitos](#pré-requisitos)
+    - [Instalação](#instalação)
+    - [Uso](#uso)
 
 ---
 
-## Overview
+## Visão Geral
 
+O projeto **GitHub Search Avanti** é uma aplicação que permite pesquisar repositórios no GitHub de forma eficiente e intuitiva. Ele inclui as seguintes funcionalidades:
 
-
----
-
-## Features
-
-<code>❯ REPLACE-ME</code>
+- Pesquisa de repositórios por nome.
+- Exibição de detalhes do repositório, como descrição, linguagem e número de estrelas.
+- **Componente de Loading:** Um spinner animado com uma imagem centralizada, exibido durante operações de carregamento.
 
 ---
 
-## Project Structure
+## Estrutura do Projeto
 
 ```sh
 └── github-search-avanti/
@@ -67,77 +60,66 @@
     │   ├── App.jsx
     │   ├── assets
     │   ├── components
+    │   │   └── Loading
+    │   │       └── LoadingSpinner.jsx
     │   └── main.jsx
     └── vite.config.js
 ```
 
-### Project Index
-									
-## Getting Started
+### Índice do Projeto
+                                    
+## Primeiros Passos
 
-### Prerequisites
+### Pré-requisitos
 
-This project requires the following dependencies:
+Este projeto requer as seguintes dependências:
 
-- **Programming Language:** JavaScript
-- **Package Manager:** Npm, Yarn
+- **Linguagem de Programação:** JavaScript
+- **Gerenciador de Pacotes:** Npm, Yarn
 
-### Installation
+### Instalação
 
-Build github-search-avanti from the source and intsall dependencies:
+Construa o projeto **GitHub Search Avanti** a partir do código-fonte e instale as dependências:
 
-1. **Clone the repository:**
+1. **Clone o repositório:**
 
     ```sh
     ❯ git clone https://github.com/amaralltx/github-search-avanti
     ```
 
-2. **Navigate to the project directory:**
+2. **Navegue até o diretório do projeto:**
 
     ```sh
     ❯ cd github-search-avanti
     ```
 
-3. **Install the dependencies:**
+3. **Instale as dependências:**
 
-<!-- SHIELDS BADGE CURRENTLY DISABLED -->
-	<!-- [![npm][npm-shield]][npm-link] -->
-	<!-- REFERENCE LINKS -->
-	<!-- [npm-shield]: https://img.shields.io/badge/npm-CB3837.svg?style={badge_style}&logo=npm&logoColor=white -->
-	<!-- [npm-link]: https://www.npmjs.com/ -->
+    **Usando [npm](https://www.npmjs.com/):**
 
-	**Using [npm](https://www.npmjs.com/):**
+    ```sh
+    ❯ npm install
+    ```
 
-	```sh
-	❯ npm install
-	```
-<!-- SHIELDS BADGE CURRENTLY DISABLED -->
-	<!-- [![yarn][yarn-shield]][yarn-link] -->
-	<!-- REFERENCE LINKS -->
-	<!-- [yarn-shield]: https://img.shields.io/badge/Yarn-2C8EBB.svg?style={badge_style}&logo=yarn&logoColor=white -->
-	<!-- [yarn-link]: https://yarnpkg.com/ -->
+    **Usando [yarn](https://yarnpkg.com/):**
 
-	**Using [yarn](https://yarnpkg.com/):**
+    ```sh
+    ❯ yarn install
+    ```
 
-	```sh
-	❯ yarn install
-	```
+### Uso
 
-### Usage
+Execute o projeto com:
 
-Run the project with:
-
-**Using [npm](https://www.npmjs.com/):**
+**Usando [npm](https://www.npmjs.com/):**
 ```sh
 npm start
 ```
-**Using [yarn](https://yarnpkg.com/):**
+**Usando [yarn](https://yarnpkg.com/):**
 ```sh
 yarn start
 ```
 
-
-[back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
-
+[voltar-ao-topo]: https://img.shields.io/badge/-VOLTAR_AO_TOPO-151515?style=flat-square
 
 ---
