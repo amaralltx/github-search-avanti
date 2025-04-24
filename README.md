@@ -10,7 +10,6 @@
 <em></em>
 
 <!-- BADGES -->
-<img src="https://img.shields.io/github/license/amaralltx/github-search-avanti?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="licença">
 <img src="https://img.shields.io/github/last-commit/amaralltx/github-search-avanti?style=default&logo=git&logoColor=white&color=0080ff" alt="último-commit">
 <img src="https://img.shields.io/github/languages/top/amaralltx/github-search-avanti?style=default&color=0080ff" alt="linguagem-principal">
 <img src="https://img.shields.io/github/languages/count/amaralltx/github-search-avanti?style=default&color=0080ff" alt="quantidade-linguagens">
@@ -44,7 +43,7 @@ O projeto **GitHub Search Avanti** é uma aplicação feita para a Avanti Innova
 
    - Tratamento de erros, exibindo mensagem amigável caso o perfil não seja encontrado.
 
-   - Estilização conforme o design do Figma, utilizando um framework CSS à escolha (por exemplo, Tailwind ou Bootstrap).
+   - Estilização conforme o design do Figma, a qual foi realizada utilizando Tailwindcss.
 
    - (Opcional) Melhorias de experiência, como indicadores de carregamento e efeitos visuais.
 
